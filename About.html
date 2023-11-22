@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,7 +10,45 @@
 
     <!-- Title -->
     <title>UG | Department of Computer Science - Home</title>
-</head>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script><style type="text/css" id="operaUserStyle"></style><style type="text/css" id="operaUserStyle"></style>
+<style type="text/css"></style><style type="text/css"></style></head>
 
 <body>
     <!-- Header -->
@@ -27,12 +62,62 @@
 
         <!-- Menu Button -->
         <nav class="menu" id="menu">
-            <a href="Home.html#">Home  &nbsp;</a>
-            <a href="About.html#">About  &nbsp;</a>
-            <a href="#Contact">Contact &nbsp;</a>
+            <strong>
+            <a href="Home.html#">Home  &nbsp; &nbsp;</a>
+            <a href="About.html#">About  &nbsp; &nbsp;</a>
+            <a href="#Contact">Contact &nbsp; &nbsp;</a>
+        </strong>
         </nav>
         
     </header>
+
+
+    
+    <div class="contentTitle">
+        <h1>Introducing The Department</h1>
+    </div>
+
+    <div class="content">
+        <h2>Welcome to DCS</h2>
+            <div class="contentBody">
+            <p id="contentParagraph">The Department of Computer Science and Information Technology (DCS) offers a range of undergraduate programs in Computer Science and Information Technology. These programs provide a solid base in theoretical concepts and practical skills, readying graduates for diverse computing projects. Studying the most recent technologies and techniques allows students to stay ahead in the ever-changing computing industry. The curriculum emphasizes both theoretical comprehension and practical application, training students to effectively navigate the ever-evolving technology landscape. This integrated approach ensures that CSIT graduates possess expertise and adaptability, making them valuable professionals in the field.</p>
+            <img src="img\about1.png" alt="Google AI visits DCS" style="width: 33%; object-fit: cover;">
+            </div>
+        <br>
+        <br>
+        
+        
+        <h2>Our Mission</h2>
+            <div class="contentBody">
+            <img src="img\about2.png" alt="Google AI visits DCS" style="width: 33%; object-fit: cover;">
+             <p id="contentParagraph">The CSIT Department aims to foster a generation of innovative computing professionals by equipping students with comprehensive knowledge and practical skills. Through constant curriculum updates, we adapt to incorporate the latest technological advancements, ensuring graduates possess the expertise required to excel in their careers. We also prioritize creating an inclusive and supportive learning environment, encouraging collaboration, critical thinking, and innovation. The department is dedicated to academic excellence and technological innovation, making it a pivotal force in shaping the future of the computing industry and empowering its students.
+
+
+
+</p>
+
+             </div>
+             <br>
+             <br>
+
+        <h2>Dedicated Faculty Members</h2>
+        <div class="contentBody">
+        <p id="contentParagraph">Our distinguished team of faculty members exhibits an unwavering passion for their research pursuits. Engaged in continuous intellectual exchanges with our students, they foster a dynamic and intellectually stimulating learning environment. Extending beyond the classroom, these dedicated scholars demonstrate a genuine commitment to creating a dynamic educational environment. By encouraging students to explore their respective fields, our faculty members serve as inspirational mentors, instilling in them a passion for intellectual curiosity and academic excellence.</p>
+        <img src="img\about3.png" alt="Google AI visits DCS" style="width: 33%; object-fit: cover;">
+        </div>
+        <br>
+        <br>
+
+        <h2>Collaborative Learning Environment</h2>
+        <div class="contentBody">
+        <img src="img\about4.png" alt="Google AI visits DCS" style="width: 33%; object-fit: cover; ">
+        <p id="contentParagraph">Being an integral part of the University of Ghana, we take immense pride in leading the charge in technological innovation and driving socio-economic transformation. Positioned at the forefront of progress, our institution provides students with the unique chance to actively engage in pioneering research initiatives. This hands-on experience not only enriches their academic journey but also empowers them to make meaningful contributions to the broader body of knowledge within their chosen fields. Embracing a commitment to excellence, we cultivate an environment that encourages exploration, creativity, and a deep understanding of the societal impact of technology, ensuring our students are well-prepared to navigate and positively influence the evolving landscape of their disciplines.
+</p>
+        </div>
+        <br>
+    </div>
+
+
 
     <footer id="footer">
         <div id="Quicklinks">
@@ -41,17 +126,16 @@
                 <li><a href="Undergrad.html#">Undergraduate Courses</a></li>
                 <li><a href="Grad.html#">Graduate Courses</a></li>
                 <li><a href="ShortCourses.html#">Short Courses</a></li>
-                <li><a href="ProgramGuide.html#">Program Guide</a></li>
+                <li><a href="EntryRequirements.html#">Entry Requirements</a></li>
                 <li><a href="Placement.html#">Placement</a></li>
             </ul>
 
             <ul>
                 <h3>About DCS</h3>
                 <li><a href="About.html#">Introducing the Department</a></li>
-                <li><a href="Admissions.html#">Admissions</a></li>
-                <li><a href="Faculty.html#">Faculty</a></li>
+                <li><a href="Academic_Calender.html#">Academic Calendar</a></li>
+                <li><a href="Complaint.html#">Submit Complaint</a></li>
                 <li><a href="Events.html#">Events</a></li>
-                <li><a href="Placement.html#">Placement</a></li>
             </ul>
         </div>
 
@@ -78,4 +162,50 @@
                     <p4>University Of Ghana, Legon Campus</p4><br>
                     <p4>Opposite Mathematics Department</p4>
                 </li>
-       
+       </ul>
+    </div>
+    
+    <div id="Copyright" >
+        <p class="CopyrightText" style="color: grey; margin-left: 100px; ">
+            Copyright ©<script>document.write(new Date().getFullYear());</script>. All rights reserved </p>
+            <br>
+    </div>
+</footer><!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
