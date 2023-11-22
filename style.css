@@ -9,7 +9,7 @@ header {
 
 .menu {
     display: block;
-    position: fixed;
+    position: relative;
     top: 7px;
     right: 50px;
     background-color: transparent;
@@ -17,24 +17,58 @@ header {
 }
 
 .menu a {
-    color: #ffffff;
+    color: #302c5c;
     text-decoration: none;
     display: inline-block;
     margin-bottom: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: auto;
 }
 
 .menu a:hover {
-    color: #302c5c;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     margin-bottom: 10px;
 }
 
 body {
+    margin-left: 100px;
+   margin-right: 100px;
+    align-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #cfcfcf;
 }
+
+.contentBody {
+   display:flex;
+   align-items: center;
+}
+
+.contentBody img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#contentParagraph {
+    width : 48%;
+}
+
+.contentTitle {
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    background-color: #dbdbdb;
+}
+.contentTitle , .content {
+    margin-left: 30px;
+   margin-right: 30px;
+    align-items: center;
+
+}
+
+
 
 #footer {
     background-color: #302c5c;
