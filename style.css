@@ -49,6 +49,7 @@ body {
 .contentBody img {
     margin-left: 10px;
     margin-right: 10px;
+
 }
 
 #contentParagraph {
@@ -68,6 +69,52 @@ body {
 
 }
 
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#event {
+    display: flex;
+    margin-bottom: 20px; /* Adjust this margin as needed */
+}
+
+#event img {
+    max-width: 100%;
+    height: auto;
+}
+
+#event div {
+    margin-left: 20px; 
 
 
 #footer {
