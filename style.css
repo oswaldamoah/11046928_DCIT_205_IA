@@ -12,7 +12,7 @@ header {
     position: relative;
     top: 7px;
     right: 50px;
-    background-color: transparent;
+    background-color: #cfcfcf;
     padding: 15px;
 }
 
@@ -23,6 +23,7 @@ header {
     margin-bottom: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow: auto;
+    background-color: #cfcfcf;
 }
 
 .menu a:hover {
@@ -69,6 +70,20 @@ body {
 
 }
 
+#homelink {
+    text-decoration: none; 
+    color: #302c5c;
+}
+
+#homelink:visited {
+    text-decoration: none; 
+    color: #302c5c;
+}
+
+#homelink:hover {
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+}
 
 .container {
     max-width: 600px;
@@ -114,10 +129,10 @@ button {
 }
 
 #event div {
-    margin-left: 20px; 
+    margin-left: 20px; }
 
 
-#footer {
+footer {
     background-color: #302c5c;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
