@@ -177,3 +177,34 @@ footer {
 #Contact li {
     font-size: smaller;
 }
+
+
+#shortcourses-container a {
+    text-decoration: none; 
+    color: inherit;  
+    margin-left: 10px; 
+    align-items: center;
+}
+
+#undergrad-container a {
+    text-decoration: none; 
+    color: inherit;  
+    margin-left: 10px; 
+    align-items: center;
+}
+
+#grad-container a {
+    text-decoration: none; 
+    color: inherit;  
+    margin-left: 10px; 
+    align-items: center;
+}
+
+
+#shortcourses-container a:hover {
+    border-color: limegreen;
+}
+
+#undergrad-container a:hover {
+    border-color: limegreen;
+}
