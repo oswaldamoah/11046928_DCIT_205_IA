@@ -18,7 +18,7 @@
 			function refreshCSS() {
 				var sheets = [].slice.call(document.getElementsByTagName("link"));
 				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
+				for (var i = 0; i < sheets.length; ++i) { 
 					var elem = sheets[i];
 					var parent = elem.parentElement || head;
 					parent.removeChild(elem);
